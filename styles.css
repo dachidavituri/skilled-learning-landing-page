@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+/* Header main footer styles */
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer {
+  padding: 16px;
+  background: #13183f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header */
+header h2 {
+  font-family: "Plus Jakarta Sans";
+
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+  color: #13183f;
+}
+header button {
+  background: #13183f;
+  border-radius: 28px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  width: 140px;
+}
+header button:hover {
+  background: #666ca3;
+}
+
+/* /* ----- * */
+/* footer */
+footer h2 {
+  font-family: "Plus Jakarta Sans";
+
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+}
+footer button {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border-radius: 28px;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  border: none;
+  height: 48px;
+  width: 140px;
+}
+footer button:hover{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);;
+}
+/* ---- */
+/* main description*/
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.description h1 {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: #13183f;
+  
+}
+.description p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+}
+.description button {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  border: none;
+  height: 56px;
+  cursor: pointer;
+  width: 167px;
+}
+.description button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+.budget {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+}
+/* main image styles */
+.mobile-version {
+  display: flex;
+  justify-content: center;
+  max-width: 375px;
+  margin-left: -15px;
+}
+.photo-of-tablet {
+  display: none;
+}
+/* stop */
+/* container styles */
+/* heaading popular courses contianer */
+.heading-card {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Plus Jakarta Sans";
+}
+.pp-course {
+  margin: 24px 29px 32px 28px;
+}
+/* Other container */
+.container-of-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+.info-card {
+  background-color: #ffffff;
+  padding: 0 28px 32px 28px;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* icon styles */
+svg {
+  margin-top: -30px;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  margin-top: -25px;
+}
+/* ------------- */
+/* container inner text stlyes */
+.container-head {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+}
+.container-description {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+}
+.container-btn {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f74780;
+  background-color: transparent;
+  border: none;
+  /* margin-left: -185px; */
+  cursor: pointer;
+}
+.container-btn:hover {
+  color: rgba(255, 167, 195, 1);
+}
+
+/* tablet resolution */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(images/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top 0.5px right -300px;
+  }
+  .budget {
+    flex-direction: row;
+    width: 100%;
+  }
+  .description {
+    justify-content: unset;
+    flex-basis: 50%;
+    margin-top: 100px;
+  }
+  .main-image {
+    display: none;
+  }
+  .mobile-version {
+    display: none;
+  }
+  .photo-of-tablet {
+    display: none;
+  }
+  .container-of-cards {
+    margin-top: 225px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-card {
+    height: 290px;
+    width: 340px;
+  }
+  .info-card {
+    width: 280px;
+    height: 260px;
+  }
+  .description p {
+    width: 398px;
+  }
+  .description h1 {
+    width: 398px;
+  }
+}
+/* 1024px and 1440 px resolution for laptop screen and more */
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: top -100px right -200px;
+  }
+  .description {
+    margin-left: 100px;
+  }
+  header button{
+    margin-right: 15%;
+  }
+  header h2{
+    margin-left: 8.5%;
+  }
+  footer h2{
+    margin-left: 8.5%;
+  }
+  footer button{
+    margin-right: 15%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container-of-cards {
+    width: 1400px;
+  }
+  .description {
+    margin-left: 165px;
+  }
+  .description h1 {
+    font-size: 56px;
+    width: 457px;
+    line-height: 71px;
+  }
+  .description p {
+    font-size: 18px;
+    width: 445px;
+    line-height: 28px;
+  }
+  .description button {
+    height: 63px;
+  }
+}
+
